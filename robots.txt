@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://roadma.github.io/sitemap.xml
+Sitemap: https://theroadqaq.github.io/sitemap.xml
