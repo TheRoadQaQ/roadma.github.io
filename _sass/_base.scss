@@ -136,6 +136,13 @@ blockquote {
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
+  padding: 0.5rem 1rem;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .navbar .dropdown-menu {
   background-color: var(--global-bg-color);
@@ -166,15 +173,23 @@ blockquote {
   .navbar-brand {
     color: var(--global-text-color);
   }
+  .navbar-nav {
+    align-items: center;
+  }
+  .navbar-nav .nav-item {
+    margin-left: 0.5rem;
+  }
   .navbar-nav .nav-item .nav-link {
     color: var(--global-text-color);
+    font-size: 0.95rem;
+    padding: 0.5rem 0.75rem;
     &:hover {
       color: var(--global-hover-color);
     }
   }
   .navbar-nav .nav-item.active>.nav-link {
       background-color: inherit;
-      font-weight: bolder;
+      font-weight: 600;
       color: var(--global-theme-color);
       &:hover {
         color: var(--global-hover-color);
@@ -287,9 +302,22 @@ footer.fixed-bottom {
 
 footer.sticky-bottom {
   border-top: 1px solid var(--global-divider-color);
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 0.9rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+  
+  .container {
+    text-align: center;
+  }
+  
+  a {
+    color: var(--global-text-color-light);
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
 }
 
 // CV
@@ -648,6 +676,101 @@ html.transition *:after {
     blockquote {
       border-left: 5px solid var(--global-theme-color);
       padding: 8px;
+    }
+  }
+}
+
+// About page customization
+.about-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.about-profile {
+  margin: 1.5rem auto;
+  max-width: 250px;
+  
+  img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 4px;
+  }
+}
+
+.about-subtitle {
+  font-size: 1rem;
+  color: var(--global-text-color-light);
+  margin-top: 1rem;
+  
+  a {
+    color: var(--global-theme-color);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.about-content {
+  max-width: 700px;
+  margin: 0 auto;
+  
+  h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: var(--global-text-color);
+  }
+  
+  p {
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    
+    li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+  }
+  
+  a {
+    color: var(--global-theme-color);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Social icons customization
+.social {
+  .contact-icons {
+    font-size: 1.8rem;
+    
+    a {
+      margin: 0 0.5rem;
+      
+      i::before {
+        color: var(--global-text-color-light);
+        transition: all 0.2s ease-in-out;
+      }
+      
+      &:hover {
+        i::before {
+          color: var(--global-theme-color);
+        }
+      }
     }
   }
 }

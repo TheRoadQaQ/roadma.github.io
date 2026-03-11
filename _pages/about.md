@@ -2,17 +2,19 @@
 layout: about
 title: about
 permalink: /
-subtitle:  <a href='https://www.nature.com/articles/nature20563'>Biorhythms</a>, <a href='https://onlinelibrary.wiley.com/doi/full/10.1111/ele.13662'>macroecology & evolution</a>, <a href='https://osf.io/profile/'>open science</a>, <a href='https://www.youtube.com/channel/UCP8ITIDaFZHW68z7KaTyDew'>shorebirds</a>.
+subtitle: 
 profile:
-  align: right
+  align: center
   image: me_&_kohout_bw_kohout-pop_grey.jpg
   image_circular: false # crops the image to make it circular
   address: >
 
 news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false  # includes social icons at the bottom of the page
+social: true  # includes social icons at the bottom of the page
 ---
+
+##### About Me
 
 I strive to understand the World within and around me. 
 
@@ -25,4 +27,4 @@ As a **scientist**, I use birds, mainly shorebirds, to explore
 
 I am an **associate professor** at   [Czech University of Life Sciences Prague](https://www.czu.cz/en) and **collaborate** with [scientists and institutions across the globe](https://doi.org/10.1126/science.aaw8529). 
 
-I am a regular contributor to <a href='https://www.inaturalist.org/people/1583651'>iNaturalist</a>. 
+I am a regular contributor to <a href='https://www.inaturalist.org/people/1583651'>iNaturalist</a>.
